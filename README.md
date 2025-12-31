@@ -110,7 +110,6 @@ ldd $(which openssl)
 ## 4. Bind NIC to vfio-pci and Configure Hugepages (All Nodes)
 This section applies to **all nodes**: sender + source + intermediate + destination.
 ```bash
-Check /proc/cmdline includes `intel_iommu=on`
 modprobe vfio
 modprobe vfio-pci
 echo 1 > /sys/module/vfio/parameters/enable_unsafe_noiommu_mode
