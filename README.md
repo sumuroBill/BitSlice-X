@@ -148,7 +148,7 @@ For each node, you must configure its **next-hop IP** by editing:
 - Source node: `source.c`
 - POT node: `node.c`
 
-Modify `l2fwd_mac_updating()` to rewrite IP addresses to the actual next hop.
+Modify the function `l2fwd_mac_updating()` to rewrite IP addresses to the actual next hop.
 
 example:
 
